@@ -1,0 +1,6 @@
+This project is complete before adding the posting from the database. 
+This project allows for the form to not be listed on the home page, but on a suburl. 
+This project sucessfully writes data from the form to the database, 
+However, it does not pull from the database back onto the website, yet. 
+That is the next step. 
+However, you could use this format to collect data, into a database, if you are not planning to post it. 
