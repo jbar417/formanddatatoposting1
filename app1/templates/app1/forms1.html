@@ -7,20 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p>What is the correct format for ...form action="/" if the formpage is not the home page?</p>
-    <p>...form action="/formpage/submitted" does naviate to the correct "submitted" page, but it does not write to the database.</p>
-    <p>...form action="/" writes to the database, but only if the formpage is the home page. </p>
-    <p>...form action="/db.sqlite3" does nothing good, but gives me an idea to put save() here. That didn't work.
-        But it gave me the idea to remove the leading "/" from the url.
-    <p>...form action="formpage/submitted, did take me to the correct page, but it did not save to the database. </p>
-    </p>
-    <p>...form action="/formpage/" did nothing.</p>
-    <p>Why did "/" work when formpage was the homepage, but it didn't work at any other time, 
-        and why does it work when the action is obviously the url navigator? Why doesn't the database save, because of this navigator?</p>
-    <p>https://www.w3schools.com/tags/att_form_action.asp</p>
-    <p>This website suggests "/formpage/" https://docs.djangoproject.com/en/3.2/topics/forms/</p>
-    <p>erased action altogether to see what happens.</p>
-    <p>erasing action altogether works! </p>
     <form method="POST">
         {% csrf_token %}
         {% for field in formkey %}
